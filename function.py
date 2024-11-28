@@ -20,7 +20,7 @@ def sub():
 def multiply():
     x = int(input("Enter a number: "))
     y = int(input("Enter another number: "))    
-    ans = x + y
+    ans = x * y
     print(f"{x} * {y} = {ans}")
    
 
@@ -53,3 +53,41 @@ elif choice == 4:
 
 else:
     print("Invalid input")
+
+print("------------------")
+
+def area_calculator():
+    print("What area do you want to calculate the area of?")
+    print("1.Triangle")
+    print("2.Square")
+    print("3.Rectangle")
+    print("4.Circle")
+
+choice = int(input("Choose from 1-4: "))
+if choice == 1:
+    base = float(input("Enter the base of the triangle: "))
+    height = float(input("Enter the height of the triangle: "))
+    area = 0.5 * base * height
+    print("Area of the triangle : " , area)
+
+elif choice == 2:
+    size = float(input("Enter the size of the square: "))
+    area = size * size
+    print("Area of the Square : " , area)
+
+elif choice == 3:
+    length = float(input("Enter the base of the rectangle: "))
+    width = float(input("Enter the width of the rectangle: "))
+    area = length * width
+    print("Area of the rectangle : " , area)
+
+elif choice == 4:
+    radius = float(input("Enter the radius of the circle: "))
+    pi = 3.14
+    area = pi * radius * radius
+    print("Area of the circle : " , area)
+
+else:
+    print("Invalid Input....")
+
+area_calculator()
