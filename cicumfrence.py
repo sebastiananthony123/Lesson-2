@@ -7,4 +7,3 @@ def circumfrence():
     print(f"Area = {area:.2f}")
 
 circumfrence()
-circumfrence()
