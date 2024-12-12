@@ -11,7 +11,7 @@ remainder = x % y
 expotent = x ** y
 
 print("Sum =" , sum)
-print("Diff =" , sub)
+sub 
 print("Product =" , mul)
 print("Division =" , div)
 print("Floor Division =" , floorDivision)
